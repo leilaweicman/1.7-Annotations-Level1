@@ -12,4 +12,9 @@ public class OnsiteWorker extends Worker {
     public double calculateSalary(int hoursWorked) {
         return hoursWorked * super.getPricePerHour() + GAS;
     }
+
+    @Deprecated
+    public double calculateOldSalary(int hoursWorked) {
+        return hoursWorked * super.getPricePerHour();
+    }
 }
